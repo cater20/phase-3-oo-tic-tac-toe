@@ -10,6 +10,7 @@ describe './lib/tic_tac_toe.rb' do
 
         expect(game).to receive(:gets).at_least(:once).and_return("1")
 
+        
         game.play
       end
 

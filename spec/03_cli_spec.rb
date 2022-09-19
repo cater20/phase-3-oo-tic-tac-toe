@@ -11,7 +11,8 @@ describe "bin/tictactoe" do
   end
 
   it 'calls #play on the instance of TicTacToe' do
-    game = TicTacToe.new
+    
+  game = TicTacToe.new
     allow($stdout).to receive(:puts)
 
     expect(TicTacToe).to receive(:new).and_return(game)
